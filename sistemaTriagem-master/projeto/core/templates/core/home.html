@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block title %}
+      <img src="{% static 'core/img/logoUFN_hor.jpg' %}"
+      class="img-responsive" style="max-width: 120px;">
+{% endblock %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+      <center>
+            <h2>Sistema de Auxilio na Triagem COVID-19 - SAT</h2>
+            <h3>Laboratório de Práticas<br>
+                Disciplina Programação Python-Django - SI<br><br>
+                Aluno: Bruno F.<br><br>
+                Professor: Alexandre Zamberlan
+            </h3>
+	</center>
+{% endif %}
+
+{% endblock %}
